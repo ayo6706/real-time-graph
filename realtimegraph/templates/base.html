@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    bootstrapp-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-20 mx-auto mt-5">
+                <h1>{{title}}</h1>
+            </div>
+        </div>
+        <div id="app">
+
+            {{value}}
+        </div>
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+    <script src="{% static 'main.js'%}"></script>
+</body>
+</html>
